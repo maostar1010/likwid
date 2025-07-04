@@ -5,9 +5,10 @@ name: Release
 
 # Run on tag push
 on:
- push:
-  tags:
-  - '**'
+  workflow_dispatch:
+  push:
+    tags:
+      - '**'
 
 jobs:
 
